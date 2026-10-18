@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Layyah Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+<header class="header">
+    <div class="container header-content">
+
+        <a href="#home" class="brand">
+            <img src="logo.jpg"
+                 alt="University of Layyah Logo"
+                 class="university-logo">
+            <div class="brand-text">
+                <h1>University of Layyah</h1>
+                <p>Knowledge, Innovation & Excellence</p>
+            </div>
+        </a>
+
+    </div>
+</header>
+
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <p class="tagline">WELCOME TO OUR UNIVERSITY BLOG</p>
+                <h2>Explore Ideas. Share Knowledge.</h2>
+                <p>
+                    Discover university news, student activities,
+                    educational insights and campus life.
+                </p>
+                <a href="#blogs" class="btn">Explore Blogs</a>
+            </div>
+        </section>
+
+        <section class="about container" id="about">
+            <h2>About Our Blog</h2>
+            <p>
+                The University of Layyah Blog is a platform to share
+                knowledge, celebrate student achievements and explore
+                educational opportunities. It connects students,
+                teachers and the university community.
+            </p>
+        </section>
+
+        <section class="blogs container" id="blogs">
+            <h2>Latest Blog Posts</h2>
+            <p class="section-intro">
+                Explore stories, ideas and updates from campus.
+            </p>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-icon">🎓</div>
+                    <div class="blog-content">
+                        <span class="category">Education</span>
+                        <h3>The Importance of Higher Education</h3>
+                        <p>
+                            Discover how higher education develops skills,
+                            builds confidence and opens new opportunities.
+                        </p>
+                        <button class="read-btn"
+                            data-title="The Importance of Higher Education"
+                            data-description="Higher education helps students develop critical thinking, professional skills and knowledge. It prepares young people for careers and encourages lifelong learning.">
+                            Read More →
+                        </button>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-icon">💻</div>
+                    <div class="blog-content">
+                        <span class="category">Technology</span>
+                        <h3>Technology in Modern Education</h3>
+                        <p>
+                            Learn how digital tools and technology are
+                            transforming the way students learn.
+                        </p>
+                        <button class="read-btn"
+                            data-title="Technology in Modern Education"
+                            data-description="Digital libraries, online learning platforms and educational software help students access information and learn more effectively. Technology also encourages creativity and collaboration.">
+                            Read More →
+                        </button>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-icon">🌱</div>
+                    <div class="blog-content">
+                        <span class="category">Campus Life</span>
+                        <h3>Building a Better Campus Community</h3>
+                        <p>
+                            Explore the value of teamwork, student
+                            activities and a positive campus environment.
+                        </p>
+                        <button class="read-btn"
+                            data-title="Building a Better Campus Community"
+                            data-description="A strong campus community grows through teamwork, respect, extracurricular activities and cooperation between students and teachers. Everyone can contribute to a welcoming learning environment.">
+                            Read More →
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact container" id="contact">
+            <h2>Stay Connected</h2>
+            <p>Subscribe to our blog for the latest updates.</p>
+
+            <form id="subscribeForm">
+                <input type="email" id="email"
+                    placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+
+            <p id="message" role="status"></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year"></span> University of Layyah Blog</p>
+            <p>Designed for educational purposes.</p>
+        </div>
+    </footer>
+
+    <div id="blogModal" class="modal" role="dialog"
+        aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <div class="modal-content">
+            <button id="closeModal" class="close-btn"
+                aria-label="Close">×</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
